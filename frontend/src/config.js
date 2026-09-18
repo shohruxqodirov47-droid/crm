@@ -1,5 +1,5 @@
 // CRM Frontend konfiguratsiya
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.PROD ? '' : 'http://localhost:5000';
 
 // Auth header yaratish uchun yordamchi funksiya
 export function getAuthHeaders() {
